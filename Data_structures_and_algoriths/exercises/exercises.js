@@ -47,9 +47,36 @@ function capitalizeAll (arr) {
 }
   
   console.log(capitalizeAll(['car','taco','banana']));
+  
+
+//reverse string
+function reverse(str){
+	if(str.length <= 1) return str;
+	return reverse(str.slice(1)) + str[0];
+}
+console.log(reverse('house'));
 
 
 
+//finding largest number
+function largestNumber(arr){
+    let max = [];
+    //set an empty variable were the largest numbers will be stored later on
+    for(let i = 0; i < arr.length; i++){
+        tempMax = arr[i][0]
+        for(let j = 0; j < arr[i].length; j++){
+            let currentElement = arr[i][j];
+            if(currentElement >= tempMax){
+                tempMax = currentElement
+            }
+        }
+        max.push(tempMax);
+
+    }
+    return max;
+}
+
+console.log(largestNumber([[4,3,25,6,2],[234,423,32,34,234],[234,23,45,664,23]]))
 
 
 
