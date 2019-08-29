@@ -34,7 +34,7 @@ function capitalizeFirst (arr) {
     return arr
 }
   
-  console.log(capitalizeFirst(['car','taco','banana']));
+console.log(capitalizeFirst(['car','taco','banana']));
 
 
 
